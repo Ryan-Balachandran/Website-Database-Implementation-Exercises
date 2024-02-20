@@ -6,8 +6,9 @@
      </head>
 
      <body>
-          <br/> 
-          <cfset todayDate = now()/>
+          <header>
+               <h1>DATE</h1><br/>
+          </header>
           <!--- 
                d: Day of the month as digits; no leading zero for single-digit days.
                dd: Day of the month as digits; leading zero for single-digit days.
@@ -38,6 +39,7 @@
                yyyy /YYYY: Year represented by four digits.
           --->
 
+          <cfset todayDate = now()/>
           <cfoutput>
                <!--- #numberFormat(235252233, ",")# --->
                #now()# <br/>

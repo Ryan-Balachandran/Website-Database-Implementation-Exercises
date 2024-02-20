@@ -6,7 +6,10 @@
      </head>
 
      <body>
-          <br/>
+          <header>
+               <h1>ARRAYS</h1><br/>
+          </header>
+
           <cfset myArray = ArrayNew(1)/> <!-- one dimensional array-->
           <cfset myArray[1] = "Hello"/>
           <cfset myArray[2] = "Goodbye"/>
@@ -18,8 +21,7 @@
           <cfset myArray2 = ["Hello", "Goodbye", {}]/>
           <cfdump var=#myArray2# label="myArray2"/><br/>
 
-
-          <cfset Book_series = ArrayNew(1)/>
+          <cfset Book_Series = ArrayNew(1)/>
           <cfset Eragon = { 
                Book_info:{
                     "ISBN13": "978-0375826696",
@@ -107,22 +109,22 @@
                }
           }/>
 
-          <cfset Book_series[1] = Eragon/>
-          <cfset Book_series[2] = Eldest/>
-          <cfset Book_series[2] = Brisingr/>
+          <cfset Book_Series[1] = Eragon/>
+          <cfset Book_Series[2] = Eldest/>
+          <cfset Book_Series[2] = Brisingr/>
 
-          <!--- <cfset Book_series = [ 
+          <!--- <cfset Book_Series = [ 
                Eragon, Eldest, Brisingr
           ]/> --->
           
-          <cfdump var=#Book_series# label="Book series by Christopher Paolini"/>
+          <cfdump var=#Book_Series# label="Book series by Christopher Paolini"/>
 
-          <!--- <ul>
+          <ul>
                <cfoutput>
-                    <cfloop array="#Book_series#" item="book">
-                         <li>#book#</li>
-                    </cfloop>
+                    <cfloop array="#Book_Series#" item="book">
+                         <li>#book.Book_info.Title# by #book.Book_Info.Author#</li>
+                    </cfloop>        
                </cfoutput>
-          </ul> --->
+          </ul>
      </body>
 </html>

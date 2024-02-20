@@ -6,7 +6,10 @@
      </head>
 
      <body>
-          <br/> 
+          <header>
+               <h1>VARIABLES</h1><br/>
+          </header>
+
           <cfset todayDate = now()/>
           <cfset randomNum = randRange(1, 1000)/>
           

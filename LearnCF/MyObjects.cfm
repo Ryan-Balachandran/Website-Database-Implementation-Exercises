@@ -2,11 +2,14 @@
 <html>
      <head>
           <meta charset="utf-8"/>
-          <title>Object</title>
+          <title>Object</title><br/>
      </head>
 
      <body>
-          <br/> 
+          <header>
+               <h1>OBJECTS</h1><br/>
+          </header>
+
           <cfset myCrayon = {
                "Color": "steel-blue",
                "Shape": "round",
@@ -15,15 +18,15 @@
                "Owner": "Ryan Balachandran"
           }/>
 
-          <cfdump var=#myCrayon# label="Crayon"/>
+          <cfdump var=#myCrayon# label="Crayon"/><br/>
           
           <!--- Dot notation vs Associative notation --->
           <cfoutput>
                <p>
-                    My Crayon is #myCrayon.Color#. I use to color paper but it is #myCrayon.shape# so it rolls off the table. <br/>  
-                    My Crayon is #myCrayon["Color"]#. I use to color paper but it is #myCrayon["shape"]# so it rolls off the table. <br/>  
+                    My Crayon is #myCrayon.Color#. I use it to color paper but it is #myCrayon.shape# so it rolls off the table. <br/>  
+                    My Crayon is #myCrayon["Color"]#. I use it to color paper but it is #myCrayon["shape"]# so it rolls off the table. <br/>  
                </p>
-          </cfoutput>
+          </cfoutput><br/>
 
           <cfset myMovie = StructNew()/>
           <cfset myMovie.cast = {}/>
@@ -32,10 +35,8 @@
           <cfset myMovie.sets = {}/>
           <cfset myMovie.sets.lowell = {}/>
           <cfset myMovie.sets.lowell.address = "1 University Avenue"/>
-          <cfdump var=#myMovie# label="myMovies"/> <!-- label is optional -->
-
-          <br/>
-     
+          <cfdump var=#myMovie# label="myMovies"/><br/> <!-- label is optional -->
+          
           <cfset myBook = StructNew()/>
           <cfset myBook.Book_info = {}/>
           <cfset myBook.Book_info.ISBN13 = "9780375826696"/>

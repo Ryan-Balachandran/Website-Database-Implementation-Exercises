@@ -8,6 +8,5 @@
         	<li class="navitem"><a href="#cgi.SCRIPT_NAME#?p=MyForm">MyForm.cfm</a></li>
         	<li class="navitem"><a href="#cgi.SCRIPT_NAME#?p=MathFunction">MathFunction.cfm</a></li>
 		<li class="navitem"><a href="#cgi.SCRIPT_NAME#?p=Component">Component.cfm</a></li>
-		<!--- <li class="navitem"><a href="#cgi.SCRIPT_NAME#?p=recap">Recap</a> --->
 	</ul>
 </cfoutput>    
