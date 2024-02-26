@@ -15,11 +15,11 @@
           <cfset myArray[2] = "Goodbye"/>
           <cfset myArray[3] = {}/>
           <!--- append with myArray.append("whatever") --->
-          <cfdump var=#myArray# label="myArray"><br/>
+          <cfdump var = #myArray# label = "myArray"><br/>
 
           <!--- Shorthand with [] --->
           <cfset myArray2 = ["Hello", "Goodbye", {}]/>
-          <cfdump var=#myArray2# label="myArray2"/><br/>
+          <cfdump var = #myArray2# label = "myArray2"/><br/>
 
           <cfset Book_Series = ArrayNew(1)/>
           <cfset Eragon = { 
@@ -117,11 +117,11 @@
                Eragon, Eldest, Brisingr
           ]/> --->
           
-          <cfdump var=#Book_Series# label="Book series by Christopher Paolini"/>
+          <cfdump var = #Book_Series# label = "Book series by Christopher Paolini"/>
 
           <ul>
                <cfoutput>
-                    <cfloop array="#Book_Series#" item="book">
+                    <cfloop array = "#Book_Series#" item = "book">
                          <li>#book.Book_info.Title# by #book.Book_Info.Author#</li>
                     </cfloop>        
                </cfoutput>

@@ -18,7 +18,7 @@
                "Owner": "Ryan Balachandran"
           }/>
 
-          <cfdump var=#myCrayon# label="Crayon"/><br/>
+          <cfdump var = #myCrayon# label = "Crayon"/><br/>
           
           <!--- Dot notation vs Associative notation --->
           <cfoutput>
@@ -82,6 +82,6 @@
                }
           }/>
 
-          <cfdump var=#myBook# label="myBook"/>
+          <cfdump var = #myBook# label = "myBook"/>
      </body>
 </html>

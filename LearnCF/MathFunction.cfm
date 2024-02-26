@@ -16,33 +16,36 @@
           <cfoutput>1343 + 42 = #addNumbers(1343, 42)#</cfoutput><br/>
           <cfoutput>13563 + 42342 = #addNumbers(13563, 42342)#</cfoutput>
 
-          <form action="#cgi.SCRIPT_NAME#?#cgi.QUERY_STRING#" method="post">
-               <br/>
+          <cfoutput>
+               <form action = "#cgi.SCRIPT_NAME#?#cgi.QUERY_STRING#" method = "post">
+                    <br/>
+     
+                    <div>
+                         <label for = "number1">number 1: </label>
+                         <input type = "number" name = "number1" placeholder = "4" value = ""/>
+                         <cfparam name = "Form.number1" default = "0">
+                    </div>
+                    
+                    <div>
+                         <label for = "number2">number 2: </label>
+                         <input type = "number" name = "number2" placeholder = "9" value = ""/>   
+                         <cfparam name = "Form.number2" default = "0">
+                    </div>
+     
+     
+                    <!--- <input type="submit" value="save"/> --->
+                    <button class = "btn btn-primary">Submit</button>
+               </form><br/>
 
-               <div>
-                    <label for="number1">number 1: </label>
-                    <input type="number" name="number1" placeholder="4" value=""/>
-                    <cfparam name="Form.number1" default="0">
-               </div>
-               
-               <div>
-                    <label for="number2">number 2: </label>
-                    <input type="number" name="number2" placeholder="9" value=""/>   
-                    <cfparam name="Form.number2" default="0">
-               </div>
+               #form.number1# + #form.number2# = #addNumbers(form.number1, form.number2)#
+          </cfoutput>
+          
 
-
-               <!--- <input type="submit" value="save"/> --->
-               <button class="btn btn-primary">Submit</button>
-          </form><br/>
-
-          <cfoutput>#form.number1# + #form.number2# = #addNumbers(form.number1, form.number2)#</cfoutput>
-
-
-          <cffunction name="addNumbers" access="private" returntype="numeric">
-               <cfargument name="firstnum" type="numeric">
-               <cfargument name="secondnum" type="numeric">
+          <cffunction name = "addNumbers" access = "private" returntype = "numeric">
+               <cfargument name = "firstnum" type = "numeric">
+               <cfargument name = "secondnum" type = "numeric">
                <cfreturn #firstnum# + #secondnum#>
+
                <!--- <cfreturn #firstnum+secondnum#> --->
           </cffunction>
 

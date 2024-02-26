@@ -80,67 +80,67 @@
           </cfoutput>  --->
 
           <cfoutput>
-               <form action="#cgi.SCRIPT_NAME#?#cgi.QUERY_STRING#" method="post">
+               <form action = "#cgi.SCRIPT_NAME#?#cgi.QUERY_STRING#" method = "post">
                     <div>
-                         <label for="ISBN13">ISBN13: </label>
-                         <input type="text" name="ISBN13" placeholder="978-0375826696" value=""/>
+                         <label for = "ISBN13">ISBN13: </label>
+                         <input type = "text" name = "ISBN13" placeholder = "978-0375826696" value = ""/>
                     </div>
 
                     <div>
-                         <label for="Title">Title: </label>
-                         <input type="text" name="Title" placeholder="Title" value=""/>
+                         <label for = "Title">Title: </label>
+                         <input type = "text" name = "Title" placeholder = "Title" value = ""/>
                     </div>
 
                     <div>
-                         <label for="Year">Year: </label>
-                         <input type="number" name="Year" placeholder="2002" value=""/>
+                         <label for = "Year">Year: </label>
+                         <input type = "number" name = "Year" placeholder = "2002" value = ""/>
                     </div>
 
                     <div>
-                         <label for="ISBN10">ISBN10: </label>
-                         <input type="number" name="ISBN10" placeholder="3758226696" value=""/>
+                         <label for = "ISBN10">ISBN10: </label>
+                         <input type = "number" name = "ISBN10" placeholder = "3758226696" value = ""/>
                     </div>
 
                     <div>
-                         <label for="Author">Author: </label>
-                         <input type="text" name="Author" placeholder="Christopher Paolini" value=""/>
+                         <label for = "Author">Author: </label>
+                         <input type = "text" name = "Author" placeholder = "Christopher Paolini" value = ""/>
                     </div>
 
                     <div>
-                         <label for="Weight">Weight: </label>
-                         <input type="text" name="Weight" placeholder="15.3 ounces" value=""/>
+                         <label for = "Weight">Weight: </label>
+                         <input type = "text" name = "Weight" placeholder = "15.3 ounces" value = ""/>
                     </div>
 
                     <div>
-                         <label for="Binding">Binding: </label>
-                         <input type="text" name="Binding" placeholder="paperback" value=""/>
+                         <label for = "Binding">Binding: </label>
+                         <input type = "text" name = "Binding" placeholder = "paperback" value = ""/>
                     </div>
 
                     <div>
-                         <label for="Pages">Pages: </label>
-                         <input type="number" name="Pages" placeholder="544" value=""/>
+                         <label for = "Pages">Pages: </label>
+                         <input type = "number" name = "Pages" placeholder = "544" value = ""/>
                     </div>
 
                     <div>
-                         <label for="Publisher">Publisher: </label>
-                         <input type="text" name="Publisher" placeholder="Alfred A. Knopf Books" value=""/>
+                         <label for = "Publisher">Publisher: </label>
+                         <input type = "text" name = "Publisher" placeholder = "Alfred A. Knopf Books" value = ""/>
                     </div>
 
                     <div>
-                         <label for="Language">Language: </label>
-                         <input type="text" name="Language" placeholder="English" value=""/>
+                         <label for = "Language">Language: </label>
+                         <input type = "text" name = "Language" placeholder = "English" value = ""/>
                     </div>
 
                     <div>
-                         <label for="Genre">Genre: </label>
-                         <input type="text" name="Genre" placeholder="young adult fiction" value=""/>
+                         <label for = "Genre">Genre: </label>
+                         <input type = "text" name = "Genre" placeholder = "young adult fiction" value = ""/>
                     </div><br/>
 
-                    <!--- <input type="submit" value="Submit"/> --->
-                    <button class="btn btn-primary">Submit</button>
+                    <!--- <input type = "submit" value = "Submit"/> --->
+                    <button class = "btn btn-primary">Submit</button>
                </form><br/>
           </cfoutput>
 
-          <cfdump var="#form#" label="The Form Data"/>
+          <cfdump var = "#form#" label = "The Form Data"/>
      </body>
 </html>
