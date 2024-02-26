@@ -8,9 +8,10 @@ component {
      /**
       * Returns all the books in our database
      **/
-     function allBooks(){
+     function allBooks() {
           try {
                var qs = new query(datasource = "RyanBalachandran");
+               // var qs = new query(datasource = application.dsource);
                qs.setSql("Select * from Book_Information order by Title");
                return qs.execute().getResult();
           } catch (any err) {
